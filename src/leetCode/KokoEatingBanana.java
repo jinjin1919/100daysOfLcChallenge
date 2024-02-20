@@ -1,6 +1,16 @@
 package leetCode;
 
 public class KokoEatingBanana {
+	
+	/*
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
+	
 
 	public int minEatingSpeed(int[] piles, int h) {
 
@@ -15,6 +25,9 @@ public class KokoEatingBanana {
 		while (left < right) {
 			int mid = (left + right) / 2;
 			int time = findTime(mid, piles);
+			
+			// If Koko can finish all the piles within h hours, set right equal to middle signifying that all speeds greater than middle are workable but less desirable by Koko. 
+			//Otherwise, set left equal to middle+1 signifying that all speeds less than or equal to middle are not workable.
 
 			if (time <= h) {
 				right = mid;
@@ -34,6 +47,10 @@ public class KokoEatingBanana {
 		}
 
 		return t;
+	}
+	
+	public static void main(String[] args) {
+		
 	}
 	
 }
