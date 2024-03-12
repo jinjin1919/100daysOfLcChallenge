@@ -11,8 +11,6 @@ public class topKSolution {
 		
 		int[] arr1 = {1,1,1,2,2,3}; 
 		int[] res1 = topKFrequent(arr1, 2); 
-		
-		
 		System.out.println(Arrays.toString(res1));
 
 	}
